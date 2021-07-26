@@ -3,11 +3,22 @@ let symbols = "MMM,ABT,ABBV,ABMD,ACN,ATVI,ADBE,AMD,AAP,AES,AFL,A,APD,AKAM,ALK,AL
 //array of all symbols
 symbols = symbols.split(',');
 
+const n = 8;
+
+
+
 function Symbols() {
+    let cells = symbols.map(symbol=><td><a href="#top" className="stock-sym">{symbol}</a></td>);
+    let data = [];
+    for (var i = 0; i < cells.length; i+=n){
+        data.push(<tr>{cells.slice(i,i+n)}</tr>);
+    }
+
     return (
-        <ul>
-            {symbols.map((symbol, index)=><li>{symbol} {index}</li>)}
-        </ul>
+        <table>
+            {data}
+        </table>
+        
     )
 }
 

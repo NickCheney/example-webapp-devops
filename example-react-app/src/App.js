@@ -5,21 +5,23 @@ import Symbols from './Symbols';
 function App() {
   return (
     <div className="App">
+      
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Symbols />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1 className="site-title">S&P 500 Stonks</h1>
       </header>
+      <nav className="page-menu">
+        <ul className="page-list">
+          <li><a href="#top" className="menu-item">Stock List</a></li>
+          <li><a href="#top" className="menu-item">Trending up</a></li>
+          <li><a href="#top" className="menu-item">Trending down</a></li>
+        </ul>
+      </nav>
+      <div className="main-page">
+        <br/>
+        <h2 className="App-subheading">Stock List</h2>
+        <Symbols />
+      </div>
     </div>
   );
 }

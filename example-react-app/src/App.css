@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -15,17 +15,72 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin: 0;
+}
+
+.site-title {
+  margin: 10px;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.stock-sym {
+  color: #282c34;
+  font-family: "Corier New",monospace;
+  font-size: calc(10px + 2vmin);
+  text-decoration: None;
+}
+
+.stock-sym:hover {
+  color: white;
+}
+
+.App-subheading {
+  color: #282c34;
+  font-family: "Corier New",monospace;
+  margin-top: 0;
+  font-size: calc(10px + 4vmin);
+}
+
+.page-list {
+  font-size: calc(10px + 3vmin);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: block;
+  background-color: #282c34C0;
+  padding-top: calc(10px + 1.5vmin);
+  padding-bottom: calc(10px + 1.5vmin);
+  
+}
+
+.page-menu {
+  background-image: url("./resources/stonks.jpg");
+}
+
+.menu-item {
+  text-align: center;
+  text-decoration: None;
+  color: white;
+  padding: calc(10px + 3vmin);
+  
+}
+
+.menu-item:hover {
+  background-color: #61dafb80;
+}
+
+.main-page {
+  background-color: #61dafbC0;
 }
 
 @keyframes App-logo-spin {
