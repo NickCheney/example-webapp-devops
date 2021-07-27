@@ -8,7 +8,7 @@ const n = 8;
 
 
 function Symbols() {
-    let cells = symbols.map(symbol=><td><a href="#top" className="stock-sym">{symbol}</a></td>);
+    let cells = symbols.map(symbol=><td><a href={"https://www.google.com/search?q="+symbol+"+stock"} className="stock-sym" rel="noreferrer" target="_blank">{symbol}</a></td>);
     let data = [];
     for (var i = 0; i < cells.length; i+=n){
         data.push(<tr>{cells.slice(i,i+n)}</tr>);
