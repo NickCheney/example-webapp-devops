@@ -43,6 +43,10 @@
   color: white;
 }
 
+.stock-chart {
+  background-color: white;
+}
+
 .App-subheading {
   color: #282c34;
   font-family: "Corier New",monospace;

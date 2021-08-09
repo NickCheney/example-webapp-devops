@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Symbols from './Symbols';
+import StockChart from './StockChart';
 
 function App() {
   return (
